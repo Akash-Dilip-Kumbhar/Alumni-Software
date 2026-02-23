@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KompassHR | Alumni Portal - Rehire</title>
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Google Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <!-- Custom Styles -->
+    <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="app-wrapper">
+        <!-- =========== Sidebar =========== -->
+        <aside class="app-sidebar d-none d-lg-flex">
+            <div class="sidebar-logo">
+                <div class="logo-icon">
+                    <span class="material-symbols-outlined">explore</span>
+                </div>
+                <h1>KompassHR</h1>
+            </div>
+            <nav class="sidebar-nav">
+                <p class="nav-section-title">Dashboard</p>
+                <a class="nav-link" href="index.html">
+                    <span class="material-symbols-outlined">dashboard</span>
+                    <span>Home</span>
+                </a>
+                <a class="nav-link" href="Profile.html">
+                    <span class="material-symbols-outlined">person</span>
+                    <span>My Profile</span>
+                </a>
+                <a class="nav-link" href="/Document-section.html">
+                    <span class="material-symbols-outlined">description</span>
+                    <span>Documents</span>
+                </a>
+                <a class="nav-link active" href="/rehire-careers.html">
+                    <span class="material-symbols-outlined">restart_alt</span>
+                    <span>Rehire</span>
+                </a>
+                <a class="nav-link" href="/Referral-program.html">
+                    <span class="material-symbols-outlined">group_add</span>
+                    <span>Referrals</span>
+                </a>
+            </nav>
+
+        </aside>
+        <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+
+        <!-- =========== Main Content =========== -->
+        <main class="app-main">
+            <!-- Top Navbar -->
+            <header class="app-header">
+                <button class="sidebar-toggle" id="sidebarToggle">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+                <div class="ms-auto d-flex align-items-center">
+                    <div class="d-flex align-items-center gap-3 header-actions">
+                        <div class="dropdown">
+                            <a class="d-flex align-items-center gap-3 text-decoration-none" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="text-end d-none d-sm-block user-info">
+                                    <p class="user-name">Dheerendra Kumar Joshi</p>
+                                    <p class="user-role">Alumni</p>
+                                </div>
+                                <img alt="Alex Profile" class="user-avatar" src="User-Pic.png" />
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end shadow-sm border mt-2">
+                                <li><a class="dropdown-item d-flex align-items-center gap-2 py-2"
+                                        href="Profile.html"><span
+                                            class="material-symbols-outlined icon-sm">person</span> User Profile</a>
+                                </li>
+
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item d-flex align-items-center gap-2 py-2 text-danger"
+                                        href="login.html"><span class="material-symbols-outlined icon-sm">logout</span>
+                                        Log
+                                        Out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="content-area">
+                <!-- Hero Section -->
+                <div class="hero-primary">
+                    <div class="position-relative" style="z-index:1;max-width:40rem">
+                        <h1 class="fw-bold mb-3" style="font-size:1.5rem;letter-spacing:-0.02em">Welcome Back! Your
+                            next chapter at KompassHR starts here.</h1>
+                        <p class="mb-4" style="font-size:1rem;color:rgba(255,255,255,0.8);line-height:1.7">Rejoin our
+                            team and continue your journey with us. Explore tailored opportunities in your former
+                            department or apply for general re-employment.</p>
+                        <div class="d-flex flex-wrap gap-2">
+                            <button class="btn bg-white text-primary-custom fw-bold px-4 py-2 shadow-sm">
+                                Apply for Re-Employment
+                            </button>
+                            <button class="btn btn-outline-light fw-bold px-4 py-2" style="border-width:2px">
+                                Update Alumni Profile
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hero-blob" style="width:20rem;height:20rem;right:-5rem;top:-5rem"></div>
+                    <div class="hero-blob"
+                        style="width:16rem;height:16rem;right:5rem;bottom:-5rem;background:rgba(var(--primary-rgb),0.4)">
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Left Column: Tracker + Quick Re-Apply -->
+                    <div class="col-12 col-lg-4">
+                        <!-- Status Tracker -->
+                        <div class="card-custom p-4 mb-4">
+                            <h5 class="fw-bold mb-4">Track Your Application Status</h5>
+                            <div class="d-flex justify-content-between align-items-end mb-3">
+                                <span
+                                    class="small fw-semibold text-primary-custom px-2 py-1 bg-primary-subtle-custom rounded">Application
+                                    Under Review</span>
+                                <span class="text-xs text-muted fw-medium">Last updated: Oct 24</span>
+                            </div>
+                            <div class="progress-custom mb-4">
+                                <div class="progress-bar" style="width: 45%"></div>
+                            </div>
+                            <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
+                                <li class="d-flex align-items-center gap-2 small fw-medium">
+                                    <span class="material-symbols-outlined icon-sm text-success">check_circle</span>
+                                    Application Submitted
+                                </li>
+                                <li class="d-flex align-items-center gap-2 small fw-medium text-primary-custom">
+                                    <span class="material-symbols-outlined icon-sm">pending</span>
+                                    HR Initial Review
+                                </li>
+                                <li class="d-flex align-items-center gap-2 small fw-medium text-muted">
+                                    <span class="material-symbols-outlined icon-sm">circle</span>
+                                    Departmental Interview
+                                </li>
+                                <li class="d-flex align-items-center gap-2 small fw-medium text-muted">
+                                    <span class="material-symbols-outlined icon-sm">circle</span>
+                                    Final Decision
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Quick Re-Apply -->
+                        <div class="card-custom p-4">
+                            <h5 class="fw-bold mb-2">Quick Re-Apply</h5>
+                            <p class="text-muted small mb-4">Need to update your details? Upload a new resume and leave
+                                a message for your former manager.</p>
+                            <form class="d-flex flex-column gap-3">
+                                <div>
+                                    <label class="form-label fw-semibold small">Update Resume</label>
+                                    <div class="upload-area py-4">
+                                        <span class="material-symbols-outlined text-muted">upload_file</span>
+                                        <p class="text-xs text-muted fw-medium mb-0 mt-1">Click to upload or drag and
+                                            drop</p>
+                                        <p class="text-xxs text-muted mt-1 mb-0">PDF, DOCX (Max 5MB)</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <label class="form-label fw-semibold small">Brief Message</label>
+                                    <textarea class="form-control" rows="4"
+                                        placeholder="Tell us why you're looking to return..."></textarea>
+                                </div>
+                                <button class="btn btn-primary w-100 fw-bold" type="submit">Submit Application</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Job Listings -->
+                    <div class="col-12 col-lg-8">
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <div>
+                                <h4 class="fw-bold mb-1">Current Open Jobs</h4>
+                                <p class="text-muted small mb-0">Roles matching your previous department: <span
+                                        class="fw-semibold text-primary-custom">Engineering</span></p>
+                            </div>
+                            <a href="#"
+                                class="text-primary-custom fw-bold small text-decoration-none d-flex align-items-center gap-1">
+                                View All Jobs
+                                <span class="material-symbols-outlined icon-sm">arrow_forward</span>
+                            </a>
+                        </div>
+
+                        <div class="row g-3">
+                            <!-- Job Card 1 -->
+                            <div class="col-12 col-sm-6">
+                                <div class="job-card h-100 d-flex flex-column">
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <div class="icon-box-sm bg-primary-subtle-custom text-primary-custom rounded">
+                                            <span class="material-symbols-outlined">terminal</span>
+                                        </div>
+                                        <span class="badge-status badge-green">New</span>
+                                    </div>
+                                    <h5 class="fw-bold mb-1">Senior Frontend Architect</h5>
+                                    <div class="d-flex flex-wrap gap-3 mb-3 text-xs text-muted fw-medium">
+                                        <span class="d-flex align-items-center gap-1">
+                                            <span class="material-symbols-outlined icon-sm">location_on</span>
+                                            New York, NY (Hybrid)
+                                        </span>
+                                        <span class="d-flex align-items-center gap-1">
+                                            <span class="material-symbols-outlined icon-sm">payments</span>
+                                            $160k - $210k
+                                        </span>
+                                    </div>
+                                    <p class="text-muted small line-clamp-2 mb-3">Lead our next-generation design system
+                                        implementation and mentor junior frontend developers.</p>
+                                    <button class="btn-apply mt-auto">Apply Now</button>
+                                </div>
+                            </div>
+                            <!-- Job Card 2 -->
+                            <div class="col-12 col-sm-6">
+                                <div class="job-card h-100 d-flex flex-column">
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <div class="icon-box-sm bg-primary-subtle-custom text-primary-custom rounded">
+                                            <span class="material-symbols-outlined">database</span>
+                                        </div>
+                                        <span class="badge-status badge-blue">Remote</span>
+                                    </div>
+                                    <h5 class="fw-bold mb-1">Backend Engineer (L5)</h5>
+                                    <div class="d-flex flex-wrap gap-3 mb-3 text-xs text-muted fw-medium">
+                                        <span class="d-flex align-items-center gap-1">
+                                            <span class="material-symbols-outlined icon-sm">location_on</span>
+                                            London, UK (Remote)
+                                        </span>
+                                        <span class="d-flex align-items-center gap-1">
+                                            <span class="material-symbols-outlined icon-sm">payments</span>
+                                            £90k - £120k
+                                        </span>
+                                    </div>
+                                    <p class="text-muted small line-clamp-2 mb-3">Scale our distributed microservices
+                                        and optimize heavy database queries for global users.</p>
+                                    <button class="btn-apply mt-auto">Apply Now</button>
+                                </div>
+                            </div>
+                            <!-- Job Card 3 -->
+                            <div class="col-12 col-sm-6">
+                                <div class="job-card h-100 d-flex flex-column">
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <div class="icon-box-sm bg-primary-subtle-custom text-primary-custom rounded">
+                                            <span class="material-symbols-outlined">security</span>
+                                        </div>
+                                        <span class="badge-status badge-slate">On-site</span>
+                                    </div>
+                                    <h5 class="fw-bold mb-1">DevSecOps Specialist</h5>
+                                    <div class="d-flex flex-wrap gap-3 mb-3 text-xs text-muted fw-medium">
+                                        <span class="d-flex align-items-center gap-1">
+                                            <span class="material-symbols-outlined icon-sm">location_on</span>
+                                            Austin, TX (On-site)
+                                        </span>
+                                        <span class="d-flex align-items-center gap-1">
+                                            <span class="material-symbols-outlined icon-sm">payments</span>
+                                            $140k - $185k
+                                        </span>
+                                    </div>
+                                    <p class="text-muted small line-clamp-2 mb-3">Implement security best practices
+                                        across CI/CD pipelines and manage cloud infrastructure.</p>
+                                    <button class="btn-apply mt-auto">Apply Now</button>
+                                </div>
+                            </div>
+                            <!-- Job Card 4 -->
+                            <div class="col-12 col-sm-6">
+                                <div class="job-card h-100 d-flex flex-column">
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <div class="icon-box-sm bg-primary-subtle-custom text-primary-custom rounded">
+                                            <span class="material-symbols-outlined">smart_toy</span>
+                                        </div>
+                                        <span class="badge-status badge-emerald">Urgent</span>
+                                    </div>
+                                    <h5 class="fw-bold mb-1">Machine Learning Engineer</h5>
+                                    <div class="d-flex flex-wrap gap-3 mb-3 text-xs text-muted fw-medium">
+                                        <span class="d-flex align-items-center gap-1">
+                                            <span class="material-symbols-outlined icon-sm">location_on</span>
+                                            San Francisco, CA
+                                        </span>
+                                        <span class="d-flex align-items-center gap-1">
+                                            <span class="material-symbols-outlined icon-sm">payments</span>
+                                            $180k - $240k
+                                        </span>
+                                    </div>
+                                    <p class="text-muted small line-clamp-2 mb-3">Develop predictive models for talent
+                                        matching and resume parsing at scale.</p>
+                                    <button class="btn-apply mt-auto">Apply Now</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Support Contact -->
+                        <div class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center gap-3 p-4 rounded-3 mt-4"
+                            style="background:#f8fafc">
+                            <div class="bg-white rounded-circle shadow-sm p-3 d-flex align-items-center justify-content-center text-primary-custom flex-shrink-0"
+                                style="width:3.5rem;height:3.5rem">
+                                <span class="material-symbols-outlined icon-lg">support_agent</span>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-0 small">Questions about re-hiring?</h6>
+                                <p class="text-xs text-muted mb-0">Contact Sarah from the Alumni Success team at <a
+                                        class="text-primary-custom fw-semibold text-decoration-none"
+                                        href="mailto:sarah@kompasshr.com">sarah@kompasshr.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer -->
+                <footer class="app-footer text-center">
+                    <p class="text-muted small mb-0">© 2026 KompassHR Inc. All rights reserved.</p>
+                </footer>
+            </div>
+        </main>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KompassHR Alumni Dashboard</title>
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Google Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <!-- Custom Styles -->
+    <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="app-wrapper">
+        <!-- =========== Sidebar =========== -->
+        <aside class="app-sidebar d-none d-lg-flex">
+            <div class="sidebar-logo">
+                <div class="logo-icon">
+                    <span class="material-symbols-outlined">explore</span>
+                </div>
+                <h1>KompassHR</h1>
+            </div>
+            <nav class="sidebar-nav">
+                <p class="nav-section-title">Dashboard</p>
+                <a class="nav-link active" href="index.html">
+                    <span class="material-symbols-outlined">dashboard</span>
+                    <span>Home</span>
+                </a>
+                <a class="nav-link" href="Profile.html">
+                    <span class="material-symbols-outlined">person</span>
+                    <span>My Profile</span>
+                </a>
+                <a class="nav-link" href="/Document-section.html">
+                    <span class="material-symbols-outlined">description</span>
+                    <span>Documents</span>
+                </a>
+                <a class="nav-link" href="/rehire-careers.html">
+                    <span class="material-symbols-outlined">restart_alt</span>
+                    <span>Rehire</span>
+                </a>
+                <a class="nav-link" href="/Referral-program.html">
+                    <span class="material-symbols-outlined">group_add</span>
+                    <span>Referrals</span>
+                </a>
+            </nav>
+
+        </aside>
+        <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+
+        <!-- =========== Main Content =========== -->
+        <main class="app-main">
+            <!-- Top Navbar -->
+            <header class="app-header">
+                <button class="sidebar-toggle" id="sidebarToggle">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+                <div class="ms-auto d-flex align-items-center">
+                    <div class="d-flex align-items-center gap-3 header-actions">
+                        <div class="dropdown">
+                            <a class="d-flex align-items-center gap-3 text-decoration-none" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="text-end d-none d-sm-block user-info">
+                                    <p class="user-name">Dheerendra Kumar Joshi</p>
+                                    <p class="user-role">Alumni</p>
+                                </div>
+                                <img alt="Alex Profile" class="user-avatar" src="User-Pic.png" />
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end shadow-sm border mt-2">
+                                <li><a class="dropdown-item d-flex align-items-center gap-2 py-2"
+                                        href="Profile.html"><span
+                                            class="material-symbols-outlined icon-sm">person</span> User Profile</a>
+                                </li>
+
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item d-flex align-items-center gap-2 py-2 text-danger"
+                                        href="login.html"><span class="material-symbols-outlined icon-sm">logout</span>
+                                        Log
+                                        Out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="content-area">
+                <!-- Hero Section -->
+                <section class="hero-primary">
+                    <div class="position-relative" style="z-index:1">
+                        <h2 class="fw-bold mb-3" style="font-size:1.5rem">Welcome back, Dheerendra Kumar Joshi!</h2>
+                        <div class="row g-3 mt-3">
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="hero-stat">
+                                    <span class="material-symbols-outlined icon-lg icon">history</span>
+                                    <div>
+                                        <p class="label mb-0">Experience</p>
+                                        <p class="value mb-0">4 Years at KompassHR</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="hero-stat">
+                                    <span class="material-symbols-outlined icon-lg icon">calendar_today</span>
+                                    <div>
+                                        <p class="label mb-0">Last Working Date</p>
+                                        <p class="value mb-0">Dec 15, 2025</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="hero-stat">
+                                    <span class="material-symbols-outlined icon-lg icon">verified_user</span>
+                                    <div>
+                                        <p class="label mb-0">Clearance Status</p>
+                                        <p class="value mb-0">Fully Cleared</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-blob" style="width:20rem;height:20rem;right:-5rem;top:-5rem"></div>
+                    <div class="hero-blob" style="width:16rem;height:16rem;left:30%;bottom:-3rem;opacity:0.5"></div>
+                </section>
+
+                <!-- Quick Links -->
+                <section>
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <h3 class="fw-bold mb-0" style="font-size:1.25rem">Quick Access</h3>
+                        <a href="#"
+                            class="text-primary-custom fw-bold text-xs text-decoration-none text-uppercase tracking-wider">View
+                            All</a>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div
+                                class="text-center p-3 card-custom rounded-3 h-100 d-flex flex-column align-items-center justify-content-center gap-2">
+                                <div class="icon-box bg-primary-subtle-custom text-primary-custom mx-auto">
+                                    <span class="material-symbols-outlined">description</span>
+                                </div>
+                                <p class="fw-semibold small mb-0">Documents</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div
+                                class="text-center p-3 card-custom rounded-3 h-100 d-flex flex-column align-items-center justify-content-center gap-2">
+                                <div class="icon-box bg-primary-subtle-custom text-primary-custom mx-auto">
+                                    <span class="material-symbols-outlined">payments</span>
+                                </div>
+                                <p class="fw-semibold small mb-0">Pay Slips</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div
+                                class="text-center p-3 card-custom rounded-3 h-100 d-flex flex-column align-items-center justify-content-center gap-2">
+                                <div class="icon-box bg-primary-subtle-custom text-primary-custom mx-auto">
+                                    <span class="material-symbols-outlined">work</span>
+                                </div>
+                                <p class="fw-semibold small mb-0">Jobs</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div
+                                class="text-center p-3 card-custom rounded-3 h-100 d-flex flex-column align-items-center justify-content-center gap-2">
+                                <div class="icon-box bg-primary-subtle-custom text-primary-custom mx-auto">
+                                    <span class="material-symbols-outlined">group_add</span>
+                                </div>
+                                <p class="fw-semibold small mb-0">Referrals</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div
+                                class="text-center p-3 card-custom rounded-3 h-100 d-flex flex-column align-items-center justify-content-center gap-2">
+                                <div class="icon-box bg-primary-subtle-custom text-primary-custom mx-auto">
+                                    <span class="material-symbols-outlined">school</span>
+                                </div>
+                                <p class="fw-semibold small mb-0">Learning</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div
+                                class="text-center p-3 card-custom rounded-3 h-100 d-flex flex-column align-items-center justify-content-center gap-2">
+                                <div class="icon-box bg-primary-subtle-custom text-primary-custom mx-auto">
+                                    <span class="material-symbols-outlined">calendar_month</span>
+                                </div>
+                                <p class="fw-semibold small mb-0">Events</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Company News -->
+                <section>
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <h3 class="fw-bold mb-0" style="font-size:1.25rem">Company News &amp; Updates</h3>
+                        <a href="#"
+                            class="text-primary-custom fw-bold text-xs text-decoration-none text-uppercase tracking-wider">All
+                            News</a>
+                    </div>
+                    <div class="row g-4">
+                        <!-- News Card 1 -->
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="news-card h-100">
+                                <div class="card-img-wrapper">
+                                    <img alt="KompassHR Best Workplace Award" class="w-100 h-100 object-fit-cover"
+                                        src="best_workplace_award.png" />
+                                    <div class="badge-overlay">
+                                        <span
+                                            class="badge bg-primary-custom text-xxs fw-bold text-uppercase">Company</span>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <p class="text-xs text-muted fw-medium mb-2">March 15, 2026</p>
+                                    <h4 class="fw-bold mb-2 line-clamp-2" style="font-size:1.1rem">KompassHR Wins "Best
+                                        Workplace" Award for 3rd Consecutive Year</h4>
+                                    <p class="text-muted small line-clamp-2">Recognized by industry leaders for
+                                        outstanding employee satisfaction, culture of innovation, and progressive HR
+                                        policies.</p>
+                                    <button
+                                        class="btn btn-link text-primary-custom fw-bold text-xs text-uppercase tracking-wider p-0 mt-3 text-decoration-none">
+                                        Read More
+                                        <span class="material-symbols-outlined text-xs">open_in_new</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- News Card 2 -->
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="news-card h-100">
+                                <div class="card-img-wrapper">
+                                    <img alt="Global Alumni Network" class="w-100 h-100 object-fit-cover"
+                                        src="global_alumni_network.png" />
+                                    <div class="badge-overlay">
+                                        <span
+                                            class="badge bg-warning text-dark text-xxs fw-bold text-uppercase">Community</span>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <p class="text-xs text-muted fw-medium mb-2">March 10, 2026</p>
+                                    <h4 class="fw-bold mb-2 line-clamp-2" style="font-size:1.1rem">Alumni Network
+                                        reaches 5,000 members globally</h4>
+                                    <p class="text-muted small line-clamp-2">Our community continues to grow. We're
+                                        launching new regional networking events in NYC, London, and Tokyo.</p>
+                                    <button
+                                        class="btn btn-link text-primary-custom fw-bold text-xs text-uppercase tracking-wider p-0 mt-3 text-decoration-none">
+                                        Read More
+                                        <span class="material-symbols-outlined text-xs">open_in_new</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- News Card 3 -->
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="news-card h-100">
+                                <div class="card-img-wrapper">
+                                    <img alt="AI HR Tools" class="w-100 h-100 object-fit-cover" src="ai_hr_tools.png" />
+                                    <div class="badge-overlay">
+                                        <span class="badge bg-success text-xxs fw-bold text-uppercase">Innovation</span>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <p class="text-xs text-muted fw-medium mb-2">March 05, 2026</p>
+                                    <h4 class="fw-bold mb-2 line-clamp-2" style="font-size:1.1rem">New AI-Powered HR
+                                        Tools Launched</h4>
+                                    <p class="text-muted small line-clamp-2">The product team has officially shipped the
+                                        latest AI recruiting suite to enterprise clients globally.</p>
+                                    <button
+                                        class="btn btn-link text-primary-custom fw-bold text-xs text-uppercase tracking-wider p-0 mt-3 text-decoration-none">
+                                        Read More
+                                        <span class="material-symbols-outlined text-xs">open_in_new</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Quick Actions Grid -->
+                <section>
+                    <div class="row g-3">
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="quick-action-card h-100">
+                                <div class="icon-box bg-primary-subtle-custom text-primary-custom">
+                                    <span class="material-symbols-outlined">description</span>
+                                </div>
+                                <div>
+                                    <p class="fw-bold mb-0">Experience Letter</p>
+                                    <p class="text-muted text-xs mb-0">Download Official Copy</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="quick-action-card h-100">
+                                <div class="icon-box bg-primary-subtle-custom text-primary-custom">
+                                    <span class="material-symbols-outlined">payments</span>
+                                </div>
+                                <div>
+                                    <p class="fw-bold mb-0">Tax Documents</p>
+                                    <p class="text-muted text-xs mb-0">2025-2026 Records</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="quick-action-card h-100">
+                                <div class="icon-box bg-primary-subtle-custom text-primary-custom">
+                                    <span class="material-symbols-outlined">work</span>
+                                </div>
+                                <div>
+                                    <p class="fw-bold mb-0">Open Positions</p>
+                                    <p class="text-muted text-xs mb-0">Explore New Roles</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="quick-action-card h-100">
+                                <div class="icon-box bg-primary-subtle-custom text-primary-custom">
+                                    <span class="material-symbols-outlined">volunteer_activism</span>
+                                </div>
+                                <div>
+                                    <p class="fw-bold mb-0">Giving Back</p>
+                                    <p class="text-muted text-xs mb-0">Corporate CSR Links</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Footer -->
+                <footer class="app-footer text-center">
+                    <p class="text-muted small mb-0">© 2026 KompassHR Inc. All rights reserved.</p>
+                </footer>
+            </div>
+        </main>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

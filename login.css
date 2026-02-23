@@ -1,0 +1,25 @@
+/* ===== Login Page Styles ===== */
+
+body {
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('login_branding.png') center center / cover no-repeat fixed;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(15, 28, 46, 0.9) 0%, rgba(26, 53, 91, 0.7) 100%);
+    z-index: 1;
+}
+
+

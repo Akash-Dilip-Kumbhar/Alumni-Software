@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KompassHR Alumni Profile</title>
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Google Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <!-- Custom Styles -->
+    <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="app-wrapper">
+        <!-- =========== Sidebar =========== -->
+        <aside class="app-sidebar d-none d-lg-flex">
+            <div class="sidebar-logo">
+                <div class="logo-icon">
+                    <span class="material-symbols-outlined">explore</span>
+                </div>
+                <h1>KompassHR</h1>
+            </div>
+            <nav class="sidebar-nav">
+                <p class="nav-section-title">Dashboard</p>
+                <a class="nav-link" href="index.html">
+                    <span class="material-symbols-outlined">dashboard</span>
+                    <span>Home</span>
+                </a>
+                <a class="nav-link active" href="Profile.html">
+                    <span class="material-symbols-outlined">person</span>
+                    <span>My Profile</span>
+                </a>
+                <a class="nav-link" href="Document-section.html">
+                    <span class="material-symbols-outlined">description</span>
+                    <span>Documents</span>
+                </a>
+                <a class="nav-link" href="rehire-careers.html">
+                    <span class="material-symbols-outlined">restart_alt</span>
+                    <span>Rehire</span>
+                </a>
+                <a class="nav-link" href="Referral-program.html">
+                    <span class="material-symbols-outlined">group_add</span>
+                    <span>Referrals</span>
+                </a>
+            </nav>
+
+        </aside>
+        <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+
+        <!-- =========== Main Content =========== -->
+        <main class="app-main">
+            <!-- Top Navbar -->
+            <header class="app-header">
+                <button class="sidebar-toggle" id="sidebarToggle">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+                <div class="ms-auto d-flex align-items-center">
+                    <div class="d-flex align-items-center gap-3 header-actions">
+                        <div class="dropdown">
+                            <a class="d-flex align-items-center gap-3 text-decoration-none" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="text-end d-none d-sm-block user-info">
+                                    <p class="user-name">Dheerendra Kumar Joshi</p>
+                                    <p class="user-role">Alumni</p>
+                                </div>
+                                <img alt="Alex Profile" class="user-avatar" src="User-Pic.png" />
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end shadow-sm border mt-2">
+                                <li><a class="dropdown-item d-flex align-items-center gap-2 py-2"
+                                        href="Profile.html"><span
+                                            class="material-symbols-outlined icon-sm">person</span> User Profile</a>
+                                </li>
+
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item d-flex align-items-center gap-2 py-2 text-danger"
+                                        href="login.html"><span class="material-symbols-outlined icon-sm">logout</span>
+                                        Log
+                                        Out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="content-area">
+                <!-- Profile Hero Banner -->
+                <div class="hero-primary" style="padding: 2rem">
+                    <div class="position-relative d-flex flex-column flex-md-row align-items-center gap-4"
+                        style="z-index:1">
+                        <img alt="Alex Profile" class="rounded-circle shadow" src="User-Pic.png"
+                            style="width:100px;height:100px;object-fit:cover;border:4px solid rgba(255,255,255,0.3)" />
+                        <div class="text-center text-md-start">
+                            <h2 class="fw-bold mb-1 text-white" style="font-size:1.75rem">Dheerendra Kumar Joshi</h2>
+                            <p class="mb-2" style="color:rgba(255,255,255,0.8)">Senior Frontend Developer • Engineering
+                            </p>
+                            <div class="d-flex flex-wrap justify-content-center justify-content-md-start gap-2">
+                                <span
+                                    class="badge bg-white text-primary-custom fw-bold px-3 py-2 rounded-pill shadow-sm">
+                                    <span class="material-symbols-outlined icon-sm align-middle me-1">badge</span>
+                                    EMP-84729
+                                </span>
+                                <span
+                                    class="badge bg-white text-primary-custom fw-bold px-3 py-2 rounded-pill shadow-sm">
+                                    <span class="material-symbols-outlined icon-sm align-middle me-1">history</span>
+                                    4 Yrs 4 Mos
+                                </span>
+                                <span
+                                    class="badge bg-white text-primary-custom fw-bold px-3 py-2 rounded-pill shadow-sm">
+                                    <span class="material-symbols-outlined icon-sm align-middle me-1">verified</span>
+                                    Alumni
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-blob" style="width:18rem;height:18rem;right:-4rem;top:-4rem"></div>
+                    <div class="hero-blob"
+                        style="width:14rem;height:14rem;right:6rem;bottom:-4rem;background:rgba(var(--primary-rgb),0.4)">
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Left Column -->
+                    <div class="col-12 col-lg-6 d-flex flex-column gap-4">
+                        <!-- Employment History Card -->
+                        <div class="card-custom p-4">
+                            <div class="d-flex align-items-center gap-2 mb-4">
+                                <div class="icon-box-sm bg-primary-subtle-custom text-primary-custom rounded">
+                                    <span class="material-symbols-outlined">work_history</span>
+                                </div>
+                                <h5 class="fw-bold mb-0">Employment History</h5>
+                            </div>
+                            <div class="d-flex flex-column gap-0">
+                                <!-- Row 1 -->
+                                <div class="d-flex align-items-start gap-3 py-3"
+                                    style="border-bottom: 1px solid #f1f5f9">
+                                    <span class="material-symbols-outlined text-muted"
+                                        style="font-size:20px;margin-top:2px">badge</span>
+                                    <div>
+                                        <p class="text-xs text-muted fw-semibold mb-0">Employee ID</p>
+                                        <p class="fw-semibold mb-0">EMP-84729</p>
+                                    </div>
+                                </div>
+                                <!-- Row 2 -->
+                                <div class="d-flex align-items-start gap-3 py-3"
+                                    style="border-bottom: 1px solid #f1f5f9">
+                                    <span class="material-symbols-outlined text-muted"
+                                        style="font-size:20px;margin-top:2px">apartment</span>
+                                    <div>
+                                        <p class="text-xs text-muted fw-semibold mb-0">Department</p>
+                                        <p class="fw-semibold mb-0">Engineering</p>
+                                    </div>
+                                </div>
+                                <!-- Row 3 -->
+                                <div class="d-flex align-items-start gap-3 py-3"
+                                    style="border-bottom: 1px solid #f1f5f9">
+                                    <span class="material-symbols-outlined text-muted"
+                                        style="font-size:20px;margin-top:2px">military_tech</span>
+                                    <div>
+                                        <p class="text-xs text-muted fw-semibold mb-0">Designation</p>
+                                        <p class="fw-semibold mb-0">Senior Frontend Developer</p>
+                                    </div>
+                                </div>
+                                <!-- Row 4 -->
+                                <div class="d-flex align-items-start gap-3 py-3"
+                                    style="border-bottom: 1px solid #f1f5f9">
+                                    <span class="material-symbols-outlined text-muted"
+                                        style="font-size:20px;margin-top:2px">date_range</span>
+                                    <div>
+                                        <p class="text-xs text-muted fw-semibold mb-0">Tenure</p>
+                                        <p class="fw-semibold mb-0">Aug 2021 – Dec 2025 <span
+                                                class="text-muted fw-normal">(4 yrs 4 mos)</span></p>
+                                    </div>
+                                </div>
+                                <!-- Row 5 -->
+                                <div class="d-flex align-items-start gap-3 py-3">
+                                    <span class="material-symbols-outlined text-muted"
+                                        style="font-size:20px;margin-top:2px">supervisor_account</span>
+                                    <div>
+                                        <p class="text-xs text-muted fw-semibold mb-0">Reporting Manager</p>
+                                        <p class="fw-semibold mb-0">Sarah Jenkins</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Personal Details Card -->
+                        <div class="card-custom p-4">
+                            <div class="d-flex align-items-center gap-2 mb-4">
+                                <div class="icon-box-sm bg-emerald-subtle text-success rounded">
+                                    <span class="material-symbols-outlined">person_pin</span>
+                                </div>
+                                <h5 class="fw-bold mb-0">Personal Details</h5>
+                            </div>
+                            <div class="d-flex flex-column gap-0">
+                                <div class="d-flex align-items-start gap-3 py-3"
+                                    style="border-bottom: 1px solid #f1f5f9">
+                                    <span class="material-symbols-outlined text-muted"
+                                        style="font-size:20px;margin-top:2px">cake</span>
+                                    <div>
+                                        <p class="text-xs text-muted fw-semibold mb-0">Date of Birth</p>
+                                        <p class="fw-semibold mb-0">14 May 1992</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-start gap-3 py-3"
+                                    style="border-bottom: 1px solid #f1f5f9">
+                                    <span class="material-symbols-outlined text-muted"
+                                        style="font-size:20px;margin-top:2px">water_drop</span>
+                                    <div>
+                                        <p class="text-xs text-muted fw-semibold mb-0">Blood Group</p>
+                                        <p class="fw-semibold mb-0">O+</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-start gap-3 py-3">
+                                    <span class="material-symbols-outlined text-muted"
+                                        style="font-size:20px;margin-top:2px">emergency</span>
+                                    <div>
+                                        <p class="text-xs text-muted fw-semibold mb-0">Emergency Contact</p>
+                                        <p class="fw-semibold mb-0">+1 (555) 987-6543 <span
+                                                class="text-muted fw-normal">(Spouse)</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Editable Contact Info -->
+                    <div class="col-12 col-lg-6">
+                        <div class="card-custom p-4 h-100">
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                                <div class="d-flex align-items-center gap-2">
+                                    <div class="icon-box-sm bg-orange-subtle text-warning rounded">
+                                        <span class="material-symbols-outlined">contact_page</span>
+                                    </div>
+                                    <h5 class="fw-bold mb-0">Contact Information</h5>
+                                </div>
+                                <button class="btn btn-sm btn-outline-primary d-flex align-items-center gap-1"
+                                    type="button" id="editContactBtn">
+                                    <span class="material-symbols-outlined icon-sm">edit</span>
+                                    Edit
+                                </button>
+                            </div>
+
+                            <!-- Contact Display Mode -->
+                            <div id="contactViewMode">
+                                <div class="d-flex flex-column gap-0">
+                                    <div class="d-flex align-items-start gap-3 py-3"
+                                        style="border-bottom: 1px solid #f1f5f9">
+                                        <div
+                                            class="icon-box-sm bg-primary-subtle-custom text-primary-custom rounded flex-shrink-0">
+                                            <span class="material-symbols-outlined">mail</span>
+                                        </div>
+                                        <div>
+                                            <p class="text-xs text-muted fw-semibold mb-0">Email Address</p>
+                                            <p class="fw-semibold mb-0" id="displayEmail">alex.johnson@example.com</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-start gap-3 py-3"
+                                        style="border-bottom: 1px solid #f1f5f9">
+                                        <div
+                                            class="icon-box-sm bg-primary-subtle-custom text-primary-custom rounded flex-shrink-0">
+                                            <span class="material-symbols-outlined">call</span>
+                                        </div>
+                                        <div>
+                                            <p class="text-xs text-muted fw-semibold mb-0">Mobile Number</p>
+                                            <p class="fw-semibold mb-0" id="displayMobile">+1 (555) 123-4567</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-start gap-3 py-3">
+                                        <div
+                                            class="icon-box-sm bg-primary-subtle-custom text-primary-custom rounded flex-shrink-0">
+                                            <span class="material-symbols-outlined">location_on</span>
+                                        </div>
+                                        <div>
+                                            <p class="text-xs text-muted fw-semibold mb-0">Residential Address</p>
+                                            <p class="fw-semibold mb-0" id="displayAddress">123 Tech Avenue, Apt
+                                                4B<br />San Francisco, CA 94105</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Contact Edit Mode (Hidden initially) -->
+                            <form id="contactEditMode" class="d-none">
+                                <div class="mb-3">
+                                    <label class="form-label text-xs fw-bold text-muted text-uppercase mb-1">Email
+                                        Address</label>
+                                    <input type="email" class="form-control" id="inputEmail"
+                                        value="alex.johnson@example.com" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label text-xs fw-bold text-muted text-uppercase mb-1">Mobile
+                                        Number</label>
+                                    <input type="tel" class="form-control" id="inputMobile" value="+1 (555) 123-4567"
+                                        required>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="form-label text-xs fw-bold text-muted text-uppercase mb-1">Residential
+                                        Address</label>
+                                    <textarea class="form-control" id="inputAddress" rows="3"
+                                        required>123 Tech Avenue, Apt 4B&#10;San Francisco, CA 94105</textarea>
+                                </div>
+                                <div class="d-flex gap-2">
+                                    <button type="submit" class="btn btn-primary fw-bold px-4">Save Changes</button>
+                                    <button type="button" class="btn btn-light fw-bold px-4"
+                                        id="cancelEditBtn">Cancel</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer -->
+                <footer class="app-footer text-center">
+                    <p class="text-muted small mb-0">© 2026 KompassHR Inc. All rights reserved.</p>
+                </footer>
+            </div>
+        </main>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

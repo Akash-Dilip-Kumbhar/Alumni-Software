@@ -9,13 +9,14 @@
 body {
     font-family: 'Inter', sans-serif;
     min-height: 100vh;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     background: url('login_branding.png') center center / cover no-repeat fixed;
     position: relative;
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: hidden;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -309,7 +310,7 @@ body {
         flex-direction: column;
         justify-content: center;
         padding: 1rem;
-        overflow-y: auto;
+        overflow-y: hidden;
     }
 
     .login-brand {

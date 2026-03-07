@@ -272,6 +272,29 @@
                 border: 1px solid rgba(255, 255, 255, 0.8);
                 margin: auto;
                 max-width: 400px;
+                margin-top: 0;
+            }
+
+            .companylogobx {
+                margin-top: auto;
+                width: 100%;
+            }
+
+            .companylogo {
+                width: 80px;
+                height: 65px;
+                border-radius: 50%;
+                overflow: hidden;
+                background-color: #fff;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .companylogo img {
+                width: 80%;
+                
+                object-fit: cover;
             }
 
             .text-dark {
@@ -352,12 +375,15 @@
 
         <!-- Right Login Section -->
         <div class="right-panel col-12 col-lg-6 col-xl-5">
-            <div class="login-form-container">
-                <!-- Mobile Logo -->
-                <div class="d-lg-none d-flex align-items-center justify-content-center gap-2 mb-3">
-                    <span class="material-symbols-outlined fs-1 fw-bold text-primary-custom">work</span>
-                    <span class="fs-3 fw-bold tracking-tight text-dark">KompassHR Alumni</span>
+            <!-- Mobile Logo -->
+            <div class="d-lg-none d-flex align-items-center justify-content-center gap-2 mb-3 companylogobx">
+                <div class="companylogo">
+                    <img src="KompassHR_LOGO.png" alt="" class=" d-lg-none d-flex" />
                 </div>
+                <span class="fs-3 fw-bold tracking-tight text-white">KompassHR Alumni</span>
+            </div>
+            <div class="login-form-container">
+
 
                 <div class="text-center text-lg-start mb-3">
                     <h2 class="fs-3 fw-bold text-dark mb-1">Member Login</h2>
@@ -435,7 +461,8 @@
                     </div>
 
                     <!-- Login Button -->
-                    <button class="login-btn-custom mt-2" type="submit" onclick="window.location.href='Dashboard.html';">
+                    <button class="login-btn-custom mt-2" type="submit"
+                        onclick="window.location.href='Dashboard.html';">
                         Log In
                         <span class="material-symbols-outlined ms-1">login</span>
                     </button>
